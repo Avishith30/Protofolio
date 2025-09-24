@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <style>
+     body{
+            background-color: #0D1B2A;         
+
+        } 
+        *{
+            margin: 0px;
+        }
+        html {
+  scroll-behavior: smooth;
+}
+nav{
+  height: 1.2cm;
+}
+        
+
+        .container {
+            margin-top: 50px;
+            border: 2px solid white;   
+            border-radius:30px;       
+            padding: 40px;             
+            margin-left: 300px; 
+            width: 24cm;
+            height: 10cm;    
+            background-color: #0F0F1F;  
+        }
+
+        
+        button{
+            border: none;
+            background-color: #0F0F1F;
+            font-size: 16px;
+            color: aliceblue;
+            border-radius: 5px;   
+            cursor: pointer;
+            width: 2cm;
+            margin: 10px;
+            
+            
+        }
+         #avi:hover{
+             background-color: #0F0F1F;
+             transform: scale(1.1); 
+             box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button:hover{
+            background-color: indigo;
+        }
+       img {
+           width: 9cm;
+           border: 3px solid white;
+           border-radius: 100%;
+           float: left;
+           margin-right: 50px;
+           margin-top: 0px;
+           transition: transform 0.4s ease, box-shadow 0.4s ease;
+           margin-left: 0px;
+            }
+         
+             img:hover {
+           transform: scale(1.05) rotate(3deg);
+           box-shadow: 0 0 30px rgba(0, 180, 216, 0.6);   
+             }
+                  #linkedin, #github, #gmail {
+                         transition: transform 0.3s ease,
+                         filter 0.3s ease;
+              }
+         
+                 #linkedin:hover,
+                 #github:hover,
+                 #gmail:hover {
+                   transform: scale(1.2);
+                   filter: brightness(1.3);
+              }
+              
+
+.name {
+      font-size: 35px;
+      color: white;
+      display: block;
+    }
+    .sub {
+      color: grey;
+      font-size: 30px;
+      display: block;
+      margin-top: 5px;
+    }
+    .title {
+      color: grey;
+      font-size: 20px;
+      margin-top: 45px;
+      display: block;
+    }
+        #section1{
+            text-align: center;
+            margin-top: 200px;
+            line-height: 1.2cm;
+        }
+        #section2{
+            margin-top: 200px;
+        }
+        #section3{
+            
+            margin-top: 200px;
+        }
+        #section4{
+            border: 1px solid ;
+            height: 6cm;
+            margin-top: 200px;
+            
+            margin-right: 0px;
+            width: 100%;
+            background-color: #0F0F1F;
+            
+        }
+        #section5{
+            margin-top: 200px;
+        }
+        
+        #linkedin{
+            width: 2cm;
+            margin-left: 50px;
+        }
+        #github{
+            width: 2cm;
+            margin-left: 550px;
+        }
+        #gmail{
+            width: 2cm;
+            margin-left: 500px;
+            
+            
+            
+        }
+                @keyframes fadeInUp {
+           from {
+             opacity: 0;
+             transform: translateY(50px);
+           }
+           to {
+             opacity: 1;
+             transform: translateY(0);
+           }
+}         
+
+section {
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+}
+
+
+#section1 { animation-delay: 0.3s; }
+#section2 { animation-delay: 0.6s; }
+#section3 { animation-delay: 0.9s; }
+#section5 { animation-delay: 1.2s; }
+#section4 { animation-delay: 1.5s; }
+   @media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  img {
+    width: 300px;
+    margin: auto;
+  }
+
+  .name {
+    font-size: 55px;
+  }
+
+  .sub {
+    font-size: 30px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a button {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  section ul,
+  section p,
+  section h3 {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  img {
+    width: 250px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .sub {
+    font-size: 24px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  nav a button {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  section h2 {
+    font-size: 32px;
+  }
+
+  section ul {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  img {
+    width: 180px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .sub {
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  nav a button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+        
+    </style>
+</head>
+<body>
+    <nav class="bar" style="background-color: #0F0F1F;">
+         <button id="avi" style="width: 4cm;margin-top: 0px;">Avishith</button>
+        <a href="#section1" ><button id="AboutMe" style="width: 2.5cm;margin-left: 630px;">About Me</button></a>
+    <a href="#section2"  target="_blank"><button id="skills" style="width: 2.5cm;">Skills</button></a>
+     <a href="#section5"  target="_blank"><button id="skills" style="width: 2.5cm;">Education</button></a>
+    <a href="#section3"  target="_blank"><button id="projects" style="width:2.5cm;">Projects</button></a>
+    <a href="#section4"  target="_blank"><button id="contact" style="width: 2.5cm;">Contact</button></a>
+    <a href="Kanna_Avishith_Resume (1).pdf" download="" target="_blank"><button id="contact" style="width: 2.5cm;">Resume</button></a>
+
+    </nav>
+      <div class="container">   
+    <h1 ><img src="My photo1.jpg" alt=""><span class="name">I'm Kanna Avishith </span ><span class="sub">based in Vinukonda. </span> 
+    <span class="title">I'm a passionate frontend developer. If you have a  great project that needs strong skills,I'm the right person for the job.
+    </span>
+    </h1>
+     </div> 
+    <section id="section1">
+        <h1 style="color: white;font-size: 27px;">About Me</h1>
+      <h3  style="color: rgb(144, 139, 139); font-size: 20px; margin-top: 50px;margin-left: 30px;">Hi, I'm K. Avishith 👋</h3>
+            <p style="color: rgb(144, 139, 139);font-size: 20px;" >
+                "I am pursuing my education in MOHAN BABU UNIVERSITY and working on real-world projects to sharpen my web development skills."
+                
+            </p>
+            <p style="color: rgb(144, 139, 139);font-size: 20px;" >
+                Currently, I'm working on projects that involve , <b>responsive layouts</b>, 
+                and <b>real-world problem solving</b>.  
+                
+            </p>
+    </section>
+    <section id="section2">
+        
+    <h2 style="text-align: center; font-size: 25px; margin-bottom: 20px; color: white;">Skills</h2>
+    <ul style="margin-left: 400px;  font-size: 20px; line-height: 1.8; color: rgb(144, 139, 139);">
+        <li><b>Python:</b> Problem-solving, automation, and real-world application development.</li>
+        <li><b>DBMS:</b> SQL, MySQL, relational models, and database design.</li>
+        <li><b>HTML:</b> Building semantic and structured web pages.</li>
+        <li><b>CSS:</b> Responsive design, layouts, and styling for modern websites.</li>
+    </ul>
+    </section>
+    <section id="section5">
+    <h2 style="text-align: center; font-size: 25px; margin-bottom: 20px; color: white;">Education</h2>
+    <h3 style="margin-left: 600px;  font-size: 20px; line-height: 1.8; color: #C0C0C0;">B.Tech Data Science</h3>
+    <p style="margin-left: 600px;  font-size: 20px; line-height: 1.8; color: #C0C0C0;">MOHAN BABU University(2023-2027) <br>
+    Relevant Courses: <span style="rgb(144, 139, 139);">Web Development,Python</span></p>
+    <h3 style="margin-left: 600px;  font-size: 20px; line-height: 1.8; color: #C0C0C0;">Certifications</h3>
+    <ul style="margin-left: 600px;  font-size: 20px; line-height: 1.8; color: rgb(144, 139, 139);" >
+        <li ><a style="color:rgb(144, 139, 139) ;" href="generative AI.pdf" target="_blank">Generative AI Studio</a></li>
+        <li><a style="color:rgb(144, 139, 139) ;" href="ms excel.pdf" target="_blank">MS Excel</a> </li>
+
+    </ul>
+    </section>
+    <section id="section3">
+        <h2 style="text-align: center; font-size: 25px;; margin-bottom: 40px; color: #222;color: white;">Projects</h2>
+
+   <div style="max-width: 1400px; margin: 0 auto; display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+
+    <div style="flex: 1; min-width: 500px; max-width: 950px; background: #ffffff; padding: 30px; border-radius: 14px; box-shadow: 0px 8px 18px rgba(0,0,0,0.15);">
+        <h3 style="color: #333; font-size: 22px;">🧠 Alzheimer’s Detection using Python</h3>
+        <p style="font-size: 20px; color: #555; line-height: 1.8;">
+            Built to detect early signs of <b>Alzheimer’s disease</b> 
+            using <b>Python libraries</b> such as Matplotlib , NumPy, Pandas, and OpenCV.  
+            The project focuses on analyzing <b>medical image datasets </b> to classify 
+            patients as healthy or affected.  
+        </p>
+        <p style="font-size: 18px; color: #444;">
+            <b>Technologies:</b> Python, Scikit-learn, NumPy, Pandas, Matplotlib
+        </p>
+    </div>
+
+    <div style="flex: 1; min-width: 500px; max-width: 950px; background: #fff; padding: 30px; border-radius: 14px; box-shadow: 0px 8px 18px rgba(0,0,0,0.15);">
+        <h3 style="color: #333; font-size: 22px;">🚖 Online Cab Booking System (DBMS)</h3>
+        <p style="font-size: 20px; color: #555; line-height: 1.8;">
+            Designed a <b>Cab Booking Management System</b> using <b>DBMS concepts</b> for handling 
+            <b>users, drivers, vehicles, rides, and payments</b>.  
+            The system includes features like ride requests, booking confirmation, driver allocation, 
+            and ride history.  
+        </p>
+        <p style="font-size: 18px; color: #444;">
+            <b>Technologies:</b> MySQL, SQL queries, ER diagrams, HTML, CSS
+        </p>
+    </div>
+
+</div>
+    </section>
+    <section id="section4">
+         <h1 style="text-align: center;color: white;font-size: 30px;">Contact Info</h1><br><br>
+         <h1 style="text-align: center;color: white;font-size: 18px;"><span style="color: white;font-size: 18px;">Phone Number:</span><a style="color:rgb(179, 172, 172) ;" href="tel:+917993860379">   +91 7993860379</a></h1><br><br><br>
+    <p>
+    <a style="width: 4cm;" href="https://www.linkedin.com/in/avishith-kanna-b08346296/" target="_blank">
+        <img id="linkedin" src="linkedin.png" alt="LinkedIn">
+    </a>
+    <a style="width: 3cm;" href="https://github.com/Avishith30" target="_blank">
+        <img id="github" src="github.png" alt="GitHub">
+    </a>
+     <a style="" href="mailto:kannaavishith@gmail.com" target="_blank">
+        <img id="gmail" src="Gmail.png" alt=""></a>
+    </p>
+    </section>
+    
+    
+
+    
+
+    
+
+    
+</body>
+</html>
